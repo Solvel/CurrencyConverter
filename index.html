@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/jquery.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Currency Converter</h1>
+            <div class="date">2021-07-18</div>
+            <ul class="currencies">
+                <li class id="currency NOK">
+                    <img src="http://www.geonames.org/flags/l/no.gif" class="flag">
+                    <div class="info">
+                        <p class="input"><span class="currency-symbol">NOK</span>
+                            <input type="text" id="NOK" placeholder="0.000" autocomplete="off"></p>
+                        <p class="currency-name">NOK - Norwegian Krone</p>
+                        <p class="base-currency-rate">1.00 <span class ="chosenCurrency"></span> = <span class="to_nok"></span> NOK</p>
+                    </div>
+                </li>
+                <li class id="currency USD">
+                    <img src="http://www.geonames.org/flags/l/us.gif" class="flag">
+                    <div class="info">
+                        <p class="input"><span class="currency-symbol">&#36;</span>
+                            <input type="text" id="USD" placeholder="0.000" autocomplete="off"></p>
+                        <p class="currency-name">USD - US Dollar</p>
+                        <p class="base-currency-rate">1.00 <span class="chosenCurrency"></span> = <span class="to_usd"></span> USD</p>
+                    </div>
+                </li>
+                <li class id="currency JPY">
+                    <img src="http://www.geonames.org/flags/l/jp.gif" class="flag">
+                    <div class="info">
+                        <p class="input"><span class="currency-symbol">&#165;</span>
+                            <input type="text" id="JPY" placeholder="0.000" autocomplete="off"></p>
+                        <p class="currency-name">JPY - Japanese Yen</p>
+                        <p class="base-currency-rate">1.00 <span class ="chosenCurrency"></span> = <span class="to_jpy"></span> JPY</p>
+                    </div>
+                </li>
+                <li class id="currency EUR">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg" class="flag">
+                    <div class="info">
+                        <p class="input"><span class="currency-symbol">&#8364;</span>
+                            <input type="text" id="EUR" placeholder="0.000" autocomplete="off"></p>
+                        <p class="currency-name">EUR - EURO</p>
+                        <p class="base-currency-rate">1.00 <span class ="chosenCurrency"></span> = <span class="to_eur"></span> EUR</p>
+                    </div>
+                </li>
+                <li class id="currency GBP">
+                    <img src="http://www.geonames.org/flags/l/uk.gif" class="flag">
+                    <div class="info">
+                        <p class="input"><span class="currency-symbol">&#163;</span>
+                            <input type="text" id="GBP" placeholder="0.000" autocomplete="off"></p>
+                        <p class="currency-name">GBP - Brittish Pound</p>
+                        <p class="base-currency-rate">1.00 <span class ="chosenCurrency"></span> = <span class="to_gbp"></span> GBP</p>
+                    </div>
+                </li>
+                <li class id="currency RUB">
+                    <img src="http://www.geonames.org/flags/l/ru.gif" class="flag">
+                    <div class="info">
+                        <p class="input"><span class="currency-symbol">&#8381;</span>
+                            <input type="text" id="RUB" placeholder="0.000" autocomplete="off"></p>
+                        <p class="currency-name">RUB - Russian Ruble</p>
+                        <p class="base-currency-rate">1.00 <span class ="chosenCurrency"></span> = <span class="to_rub"></span> RUB</p>
+                    </div>
+                </li>
+                <li class id="currency CNY">
+                    <img src="http://www.geonames.org/flags/l/cn.gif" class="flag">
+                    <div class="info">
+                        <p class="input"><span class="currency-symbol">&#165;</span>
+                            <input type="text" id="CNY" placeholder="0.000" autocomplete="off"></p>
+                        <p class="currency-name">CNY - Chinese Yuan Renminbi</p>
+                        <p class="base-currency-rate">1.00 <span class ="chosenCurrency"></span> = <span class="to_cny"></span> CNY</p>
+                    </div>
+                </li>
+                <li class id="currency INR">
+                    <img src="http://www.geonames.org/flags/l/in.gif" class="flag">
+                    <div class="info">
+                        <p class="input"><span class="currency-symbol">&#8377;</span>
+                            <input type="text" id="INR" placeholder="0.000" autocomplete="off"></p>
+                        <p class="currency-name">INR - Indian Rupee</p>
+                        <p class="base-currency-rate">1.00 <span class ="chosenCurrency"></span> = <span class="to_inr"></span> INR</p>
+                    </div>
+                </li>
+            </ul>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
